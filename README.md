@@ -8,4 +8,8 @@ Stretch. The recipe is built using the debian-9 dockerfiles from webdevops, with
 The image structure should be the same as the webdevops one, and it should support the same environment variables. The 
 documentation can be found here: [https://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-apache.html].
 
+The conf/ folder contains configuration files from the [https://github.com/webdevops/Dockerfile] repository with some changes:
+
+- 30-setup-ioncube.sh - Modified to download dynamic ioncube version based on arch (it was hardcoded to x86_64)
+
 Special thanks to Webdevops team!
